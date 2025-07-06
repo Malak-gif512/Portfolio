@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malak Hussein | Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            animation: fadeInDown 1.2s ease-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            animation: fadeIn 1.2s ease-in;
+        }
+
+        h2 {
+            color: #4f46e5;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            border-bottom: 2px solid #e0e7ff;
+            padding-bottom: 0.5rem;
+        }
+
+        .skills,
+        .certs,
+        .projects,
+        .contact {
+            margin-bottom: 2.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #4f46e5;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: white;
+            border-left: 5px solid #4f46e5;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            animation: fadeInUp 1s ease-in;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .project img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease;
+        }
+
+        .project h3 {
+            margin-bottom: 0.3rem;
+            font-size: 1.4rem;
+        }
+
+        .contact p,
+        .contact a {
+            margin-bottom: 0.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color: #4f46e5;
+        }
+
+        footer {
+            text-align: center;
+            background: #e0e7ff;
+            padding: 1rem;
+            font-size: 0.9rem;
+            animation: fadeInUp 1s ease-in;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Malak Hussein</h1>
+        <p>Web Developer | HTML, CSS, JavaScript, C#</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I’m a web developer with intermediate experience in HTML, CSS, JavaScript, and C#. I'm currently studying
+            Computers and Artificial Intelligence at Fayoum University (GPA 3.74). I love building responsive,
+            user-friendly web apps and solving real-world problems.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>C#, Java, FastAPI</li>
+            <li>Responsive Design, UI/UX</li>
+            <li>Git, GitHub, OOP</li>
+        </ul>
+    </section>
+
+    <section class="certs">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Cisco Data Science</li>
+            <li>ITI Android with Kotlin</li>
+            <li>HackerRank Java (Basic)</li>
+            <li>Web & Data Analysis (TIEC)</li>
+            <li>ALX AICE-AI Program</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="/images/Custom Search Engine Web App.png" alt="Search Engine Screenshot">
+            <h3>🔍 Search Engine Platform</h3>
+            <p>Custom-built using FastAPI and Java. Includes crawler, inverted index, and dynamic front-end search UI.
+            </p>
+        </div>
+        <div class="project">
+            <img src="/images/Dashboard Website Template.png" alt="Admin Dashboard Screenshot">
+            <h3>📊 Admin Dashboard Template</h3>
+            <p>Fully responsive dashboard with charts, tables, and sidebar using HTML, CSS, JavaScript, and Bootstrap.
+            </p>
+        </div>
+        <div class="project">
+            <img src="/images/Kaspar Template.png" alt="Kaspar Website Template Screenshot">
+            <h3>💼 Kaspar Website Template</h3>
+            <p>Clean and modern multipurpose template suitable for portfolios and business sites.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>📧 malakhussein635@gmail.com</p>
+        <p>🔗 <a href="https://github.com/Malak-gif512" target="_blank">GitHub</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/malak-hussein" target="_blank">LinkedIn</a></p>
+        <p>📍 Fayoum, Egypt</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Malak Hussein. All rights reserved.
+    </footer>
+</body>
+
+</html>
